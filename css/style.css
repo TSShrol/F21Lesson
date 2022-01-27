@@ -1,0 +1,90 @@
+
+*{
+    margin: 20px ;
+}
+html{
+    font-size: 16px;
+}
+body{
+    font-size: 24px;
+}
+/* Перша частина */
+p{
+    color: red;
+
+}
+p>strong{
+    color:royalblue;
+}
+
+
+/* стилізація списків */
+li{
+    /* font-size: 0.8em; */
+    /* font-size: 80%; */
+    font-size: 1.8rem;
+    /* font-size: 5vh; */
+}
+
+
+ol li {
+    color: blue;
+}
+
+li.first {
+       color:green; 
+}
+
+.first span{
+    color:indigo
+}
+h1+p {
+    font-weight: 800;
+    color:green;
+}
+
+h1~p{
+    color:blue;
+}
+
+
+li:nth-child(n+2){
+    color:red;
+}
+li:only-child{
+    color:yellow;
+}
+
+
+/* селектори атрибутів */
+
+/* [alt]{
+    width: 400px;
+    border: blue 3px solid;
+
+} */
+
+[alt="lake"]{
+    width: 700px;
+    border-radius: 20px;
+}
+[alt~="lake"]{
+    border: green 4px solid;
+
+}
+
+[class|="fi"]{
+    font-size: 2rem;
+}
+
+img [alt^="lake"]{
+    width: 300px;
+}
+
+
+
+
+
+
+
+
