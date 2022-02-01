@@ -1,0 +1,71 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color: lightblue;
+    font-size: 16px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.content{
+    width: 800px;
+    min-height: 900px;
+    /* margin-top: 20px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left:auto; */
+    margin: 20px auto;
+    background-color: white;
+    padding: 30px 50px;
+    text-align: justify;
+}
+
+.article, 
+.resume {
+    margin-bottom: 10px;
+    padding: 20px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+img{
+    width: 180px;
+    box-shadow: 0px 0px 3px 2px #a4d6e0;
+}
+
+.left{
+    float:left;
+    margin-right: 20px;
+    
+}
+
+.right{
+    float:right;
+    margin-left: 20px;
+    
+}
+
+.book{
+   clear: both;
+   margin-bottom: 10px;
+   box-shadow: 0px 0px 4px 2px lightgray;
+   padding: 10px;
+   min-height: 350px;
+}
+
+.book-info{
+    text-indent:8px;
+}
