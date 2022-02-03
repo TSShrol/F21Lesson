@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        #wrap {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        #header {
+            height: 50px;
+            background-color: blue;
+        }
+
+        #content {
+            height: 300px;
+            background-color: brown;
+            margin: 0 auto;
+            position: relative;
+            /* top:60px;
+        left: 40px; */
+            /* top, bottom, left, right */
+        }
+
+        .block {
+            width: 300px;
+            height: 80px;
+            margin: 0 auto;
+        }
+
+        .red {
+            position: fixed;
+            top: 200px;
+            background-color: red;
+        }
+
+        .green {
+            /* position: fixed; */
+            /* top: 200px; */
+            background-color: green;
+        }
+
+        .yellow {
+            /* position: absolute; */
+            bottom: 20px;
+            background-color: yellow;
+        }
+
+        #footer {
+            height: 50px;
+            background-color: aqua;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header">header</div>
+        <div id="content">
+            content
+            <div class="block red"></div>
+            <div class="block green">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quae rem eum
+                porro reprehenderit nostrum, tempora eveniet amet, minus itaque corrupti quia natus laudantium a! Veniam
+                porro harum sint omnis nemo eos consectetur modi ducimus. Voluptates omnis soluta voluptatum? Ab natus
+                quam illo magni! Non hic dolores earum maiores laudantium corrupti minus facilis aliquid consequatur
+                fugiat. Eius molestias adipisci cumque laudantium ad aspernatur libero deleniti. Possimus natus commodi
+                ipsam exercitationem veritatis. Explicabo, quidem? Autem quisquam saepe maiores maxime ex hic quo
+                obcaecati minima aliquam esse! Obcaecati dolorum a expedita! Nobis reiciendis cum ipsa quos modi
+                accusantium obcaecati dicta eaque natus!
+
+            </div>
+            <div class="block yellow"></div>
+        </div>
+        <div id="footer">footer</div>
+    </div>
+</body>
+
+</html>
