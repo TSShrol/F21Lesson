@@ -1,0 +1,128 @@
+/* Позиціїнування блоків */
+/* div{
+    background-color: red;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+div div{
+   background-color: green;
+   width: 200px;
+   height: 200px; 
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   margin: auto;
+}
+
+div div div{
+    background-color: yellow;
+   width: 100px;
+   height: 100px; 
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   margin: auto;
+} */
+
+/* ++++++++++++++++++++++++++++ */
+/* float ------SHEMA 1--------- */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+article{
+    width: 1000px;
+ margin: 0 auto;
+}
+
+.header{
+    background-color: brown;
+    width: 100%;
+    height: 130px;
+}
+
+.left {
+    background-color: aquamarine;
+    width: 140px;
+    float:left;
+    height: 300px;
+}
+
+.center{
+    background-color: blue;
+    margin-left: 150px;
+    margin-right: 150px;
+    height: 800px;
+}
+
+.right{
+    background-color: coral;
+    width: 140px;
+    height: 300px;
+    margin-top: -800px;
+    float:right;
+ }
+
+.footer{
+    clear: both;
+    background-color: aqua;
+    width: 100%;
+    height: 70px;
+}
+
+
+/* -------------------SHEMA 2------------------- */
+.article2{
+    border: 1px solid gray;
+    box-shadow: 0 0 8px rosybrown;
+}
+.article2 .center{
+    background-color: bisque;
+    margin-right: 20%;
+    margin-left: 0;
+    height: 800px;
+}
+.article2 .right{
+    background-color: coral;
+    width: 20%;
+    height: 600px;
+    float:right;
+}
+
+
+/* position z-index and position relative and absolute */
+.box__out{
+    width: 350px;
+    height: 200px;
+    border: 2px dotted red;
+    margin: 0 auto;
+    position: relative;
+}
+.box__in{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+.red{
+    background-color: red;
+    top:50px;
+    left: 50px;
+}
+.blue{
+    background-color: blue;
+    top:75px;
+    left: 75px;
+    z-index: 1;
+}
+.green{
+    background-color: green;
+    top: 100px;
+    left: 100px;
+}

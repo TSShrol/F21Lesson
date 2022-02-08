@@ -1,0 +1,30 @@
+body{
+    background-image: url(images/bg1.png);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* background-repeat: repeat-x; */
+    /* background-position: top left;
+    background-position: bottom left;
+    background-position: 50% 50%; */
+    /* background-image: url(images/nnekku.jpg) ; */
+    /* background-repeat: no-repeat; */
+    /* background-size: contain;      */ 
+    /* background-attachment: fixed; */
+
+}
+
+img{
+    width: 400px;
+    border: 1px solid gray;
+}
+.image-p{
+    width: 400px;
+height: 100px;
+overflow: auto;
+ background-image: url(images/sharm-el-sheikh.jpg);
+ background-repeat: no-repeat;
+ /* background-clip: content-box; */
+ background-attachment: fixed;
+ /* background-origin: content-box; */
+
+}
