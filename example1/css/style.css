@@ -1,0 +1,35 @@
+body{
+    /* background-image: url(https://avexpert.com.ua/images/products/7f4iYEnKBx_700_482.jpg),url(https://b-pro.com.ua/assets/cache/images/komputerne-obladnanny/xkompyuter-x-0fa.jpg.pagespeed.ic.rPqLNPEiu0.jpg),url(https://china-review.com.ua/uploads/posts/2020-11/1604265279_screenshot_163.jpg), url(https://img2.akspic.ru/previews/4/1/7/4/14714/14714-tuman-fon-dymka-tekstura-atmosfera-550x310.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat,repeat;
+    background-size: 25%, 20%, 25%;
+    background-position: bottom left, bottom center, bottom right; */
+
+    background-image:url(https://365psd.ru/images/backgrounds/bg-light-4818.png); /*url(https://img2.akspic.ru/previews/4/1/7/4/14714/14714-tuman-fon-dymka-tekstura-atmosfera-550x310.jpg);*/
+    background-repeat:repeat;
+    
+   
+}
+
+article{
+    /* background-color: ; */
+    padding: 20px 10px;
+    margin: 0 auto;
+    width: 80%;
+    background-color: rgb(238, 234, 234);
+    background-image: url(https://avexpert.com.ua/images/products/7f4iYEnKBx_700_482.jpg),url(https://b-pro.com.ua/assets/cache/images/komputerne-obladnanny/xkompyuter-x-0fa.jpg.pagespeed.ic.rPqLNPEiu0.jpg),url(https://china-review.com.ua/uploads/posts/2020-11/1604265279_screenshot_163.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 25%, 20%, 25%;
+    background-position: bottom left, bottom center, bottom right;
+}
+
+a{
+ text-decoration: none;
+ color: black;
+}
+
+a:hover{
+    /* text-decoration: solid; */
+    text-decoration: underline 1px dashed gray;
+    color: blue;
+}
+
