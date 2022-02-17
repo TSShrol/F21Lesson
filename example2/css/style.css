@@ -1,0 +1,51 @@
+img{
+    filter:blur(3px);
+       width: 50%;
+}
+
+img{
+    animation: myAnim2 5s linear alternate;
+    /* animation-name: myAnim1 ;
+    animation-duration: 10s;
+    animation-timing-function: linear;*/
+    animation-iteration-count: infinite ; 
+    /* animation-fill-mode: forwards; */
+    /* animation-direction: alternate;  */
+}
+
+
+img:hover{
+    animation-play-state: paused;
+}
+@keyframes myAnim1{
+  from{
+      margin-left: 0%;
+      transform: scale(1,1);
+  }
+
+  to{
+      margin-left: 50%;
+      transform: scale(1.3,1.3);
+  }
+
+}
+@keyframes myAnim2{
+    0%{
+        margin-left: 0%;
+    
+    }
+    25%{
+        filter:brightness(0.5);
+    }
+    45%{
+         transform: rotate(180deg);
+    }
+  
+    100%{
+        margin-left: 50%;
+    }
+    
+
+  
+  }
+
