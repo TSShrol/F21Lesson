@@ -1,0 +1,91 @@
+body{
+    background-color: lightgray;
+}
+
+.slide-show{
+    width: 570px;
+    height: 270px;
+    margin: 0 auto;
+    border: 15px solid white;
+    /* box-shadow: inset 0 0  6px green; */
+    position: relative;
+    overflow: hidden;
+}
+
+.sliders{
+    width: 1710px;
+    height: 270px;
+    position: absolute;
+    top: 0;
+    left:0 ;
+    animation-name: slide_animation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-delay: 3s;
+
+}
+
+.sliders:hover{
+    animation-play-state: paused;
+
+}
+
+.sliders:hover img{
+    cursor: pointer;
+    animation: slide_big  3s infinite;
+}
+
+.sliders article{
+    position:absolute;
+    width: 570px;
+    height: 270px;
+    top: 0; 
+    left:0; 
+}
+
+.sliders div{
+   position: absolute;
+   width: 250px;
+   background-color: rgba(0, 0,0,0.6);   
+   color: white;
+   padding: 10px;
+   top: 50px;
+   right: 50px;
+}
+
+
+.sliders article:nth-child(1){
+    left:0;
+}
+
+.sliders article:nth-child(2){
+    left:570px;
+}
+
+.sliders article:nth-child(3){
+    left:1140px;
+}
+
+
+@keyframes slide_animation {
+     0%{left: 0px;}
+     50%{left: -570px;}
+     /* 80%{left: -1140px;}  */
+     100%{left: -1140px;}
+     50%{left: -570px;}  
+     0%{left: 0px;}
+}
+
+
+@keyframes slide_big {
+    0%{  width: 100%;}
+    50%{
+        width: 125%;
+    }
+    100%{
+        width:150% ;
+    }
+    
+}
