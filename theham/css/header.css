@@ -1,0 +1,61 @@
+/* min-height: 370px;  */
+/* або 370px/16px =23.125rem  */
+
+.header{
+    background-color: rgba(73, 71, 63,0.6);
+    min-height: 120px;
+    height: 120px;
+    width: 100%;
+    color: #fff;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+}
+
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 120px;
+}
+
+.logo{
+    width: 196px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo h1{
+    margin-left: 10px;
+    font-size: 32px;
+    font-family: 'Montserrat-Regular';
+}
+
+h1 span{
+    color:#18cfab;
+    text-transform: capitalize;
+    font-family: 'Montserrat-Bold';
+}
+.header__top .left-block,
+.mainmenu ul{
+    display: flex;
+
+}
+/*або */
+
+/*або задати ширину nav і тоді відстань між flex-елементами */
+.mainmenu ul li{
+    margin-left: 15px;
+}
+
+.mainmenu ul a{
+    text-transform: uppercase;
+    font-family: 'Montserrat-Bold';
+    font-size: 13px;
+}
+
+.header-find{
+    margin-left: 15px;
+    font-size: 22px;
+}
+
