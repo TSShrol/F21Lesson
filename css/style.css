@@ -77,23 +77,154 @@
     grid-column: 3;
     grid-row: 2 / span 2;
 }
+
+
 /* GRID-2*/
 .grid1{
  margin-top: 10vh;
- grid-template-columns: [col1-start] 200px [col2-start] auto [col3-start] auto [col3-end];
- grid-template-rows: [row1-start] auto [row2-start] auto [row3-start] auto [row4-start] auto [row4-end];
-
+ /* grid-template-columns: [col1-start] 200px [col2-start] auto [col3-start] auto [col3-end];
+ grid-template-rows: [row1-start] auto [row1-end row2-start ] auto [row3-start] auto [row4-start] auto [row4-end]; */
+  grid-template-columns: [col] auto [col] auto [col] auto ;
+  grid-template-rows: [rows] auto [rows] auto [rows] auto [rows] auto;
 }
 
-.grid.grid1 .item-4{
+/* .grid.grid1 .item-4{
      grid-column: col3-start / col3-end ;
      grid-row: row2-start  / row3-start;
 }
+*/
 
-.grid.grid1 .item-9{
+.grid.grid1 .item-1{
+    grid-column: col / span 3;
+    grid-row: rows ;
+}
+
+.grid.grid1 .item-2{
+    min-width: 100px;
+    grid-column: col 1;
+    grid-row: rows 2;
+    align-self: center;
+    justify-self: center;
+}
+
+.grid.grid1 .item-3{
+    grid-column: col 2;
+    grid-row: rows 2;
+}
+
+.grid.grid1 .item-4{
+    grid-column: col 3;
+    grid-row: rows 2;
+}
+.grid.grid1 .item-5{
+    grid-column: col 1;
+    grid-row: rows 3;
+}
+
+.grid.grid1 .item-6{
+    grid-column: col 2;
+    grid-row: rows 3;
+}
+
+/* .grid.grid1 .item-9{
     grid-column: col3-start / col3-end ;
     grid-row: row3-start  / row4-end;
+} */
+
+.grid.grid1 .item-9{
+    grid-column: col 3;
+    grid-row: rows 3 / span 2;
+} 
+
+/* GRID 2*/
+.grid.grid2 {
+  min-height: 900px;
+  align-content:center;
+  justify-content: center;
+  margin-top: 10vh;
+  /* grid-template-columns: 200px 200px 200px;
+  grid-template-rows: [row1-start] 10rem [row2-start] 10rem [row3-start ] 10rem [row3-end];
+  grid-template-areas: 
+        "area1 area2 area3"
+        "area1 area4 area4"
+        "area1 area5 area6";;
+  */
+  grid-template: 
+            [row1-start]   "area1 area2 area3" 10rem 
+            [row2-start]   "area1 area4 area4" 10rem
+            [row3-start]   "area1 area5 area6" 10rem / 200px 200px 200px ;
+
+  align-items:stretch;
+}
+
+.item-1{
+    grid-area: area1;
+    justify-self:auto;
+    align-self: stretch;
+
+}
+
+.item-2{
+    grid-area: area2;
+    justify-items: end;
+}
+
+.item-3{
+    grid-area: area3;
+}
+
+.item-4{
+    grid-area: area4;
+}
+
+.item-5{
+    grid-area: area5;
+}
+
+.item-6{
+    grid-area: area6;
 }
 
 
+/* Grid.jpg*/
+/*site maket*/
 
+.wrapper{
+    max-width: 1200;
+    display: grid;
+    padding: 10px;
+    grid-template: 
+    "header header header header header header" 10vh
+    "menu  main  main  main main right" 75vh
+    "menu footer footer footer footer footer" 10vh
+    / 
+    1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header{
+    grid-area: header;
+    background-color: rgb(97, 97, 97);
+}
+
+.menu {
+    grid-area: menu;
+    background-color:green;
+}
+.main {
+    grid-area: main;
+    background-color: lightblue;
+}
+.right {
+    grid-area: right;
+    background-color: yellow;
+}
+.footer {
+    grid-area: footer;
+    background-color: blue;
+}
