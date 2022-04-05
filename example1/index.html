@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="icons">
+        <div class="icon facebook"></div>
+        <div class="icon twitter"></div>
+        <div class="icon youtube"></div>
+        <div class="icon instagram"></div>
+        <div class="icon linkedin"></div>
+    </div>
+    <form class="registration" action="" method="get">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" value="Noname" required maxlength="10">
+        <label for="secondName">Second Name</label>
+        <input type="text" id="secondName" name="secondName" required maxlength="30">
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" min="1" max="99" readonly value="18">
+        <label for="email"></label>
+        <input type="email" name="email" id="email" placeholder="address@gamil.com">
+        <label for="password">Password </label>
+        <input type="password" id="password" name="password" minlength="6" maxlength="10" required>
+        <!-- <label for="pidpiska"></label> -->
+
+        <fieldset class="registration-options">
+            <legend> Options </legend>
+            <input type="checkbox" name="pidpiska1" id="pidpiska1" disabled><span>check</span>
+            <input type="checkbox" name="pidpiska2" id="pidpiska1"><span>check2</span>
+            <input type="checkbox" name="pidpiska3" id="pidpiska1" checked><span>check3</span>
+        </fieldset>
+
+
+        <fieldset class="registration-personalinfo">
+            <legend>Address</legend>
+            <select name="country"required>
+                <option value=""  >None</option>
+                <optgroup label="Europa">
+                    <option value="1">Ukraine</option>
+                    <option value="2" disabled>Italy</option>
+                </optgroup>
+                <optgroup label="America">
+                    <option value="3">France</option>
+                    <option value="4">USA</option>
+                    <option value="5">Canada</option>
+                </optgroup>
+            </select>
+            <br>
+            <input type="radio" name="sex" id="" value="value"> <span>male</span>
+            <input type="radio" name="sex" id=""> <span>female</span>
+            <input type="radio" name="sex" id="" checked> <span>other</span>
+            <br>
+            <br>
+             <label for="skills">You skills in frontend</label>   
+             <input type="range" min="0" max="100" id="skills" name="skills"> <span> % </span>
+             <input type="file" name="photo" value=""> 
+        </fieldset>
+
+        <textarea name="" id="" cols="43" rows="5" placeholder="Enter info about your hobby..."></textarea>
+
+        <div class="buttons">
+            <input type="reset" value="RESET">
+            <input type="button" value="Button">
+            <input type="submit" value="Send">
+        </div>
+        <!-- <input type="image" src="fon1.jpg" alt="sddsds"> -->
+        <!-- <input type="url" name="" id=""> -->
+    </form>
+
+</body>
+
+</html>
